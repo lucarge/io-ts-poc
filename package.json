@@ -1,0 +1,21 @@
+{
+  "name": "io-ts-poc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "json-server": "0.14.2",
+    "ts-node": "8.0.3",
+    "tsconfig-paths": "3.8.0",
+    "typescript": "3.3.3333"
+  },
+  "dependencies": {
+    "io-ts": "1.8.3",
+    "isomorphic-fetch": "2.2.1"
+  },
+  "scripts": {
+    "execute": "ts-node --project tsconfig.json -r tsconfig-paths/register --transpile-only",
+    "server": "json-server --watch db.json",
+    "typecheck": "tsc -p tsconfig.json"
+  }
+}
